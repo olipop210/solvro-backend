@@ -7,8 +7,8 @@ async function bootstrap() {
 
   const config = new DocumentBuilder()
     .setTitle('Cocktails API')
-    .setDescription('The cocktails API description')
-    .setVersion('0.1')
+    .setDescription('API koktajlowo-rekrutacyjne')
+    .setVersion('0.1 mocno testowa')
     .build();
   const options = {ignoreGlobalPrefix: true}
   const documentFactory = () => SwaggerModule.createDocument(app, config, options);

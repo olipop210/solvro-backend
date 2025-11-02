@@ -11,6 +11,7 @@ export class CocktailsService {
   ): Promise<Cocktail | null> {
     const result = this.prisma.cocktail.findUnique({
       where: cocktailWhereUniqueInput,
+      include: { Ingredients: true },
     });
     return result;
   }

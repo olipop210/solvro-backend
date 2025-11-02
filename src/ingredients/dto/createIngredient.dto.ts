@@ -1,5 +1,7 @@
 import { ApiProperty } from '@nestjs/swagger';
 
+//Dto do tworzenia składnika.
+
 export class CreateIngredientDto {
 
     @ApiProperty({ example: 'Lime' })

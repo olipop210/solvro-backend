@@ -1,14 +1,4 @@
-/**
- * Manual lightweight implementation of the Cocktail create input shape.
- *
- * This mirrors the relevant parts of Prisma's generated `CocktailCreateInput` type
- * but is defined here as plain TypeScript interfaces so it can be used at runtime
- * (for DTOs, request typings, small helpers) without importing Prisma runtime values.
- *
- * Adjust fields as needed for your API shape. For nested ingredient creation we
- * allow either `IngredientsIDs` (connect existing ingredients by id) or
- * `Ingredients` (nested create objects).
- */
+//Dto do tworzenia koktajlu. Można podać istniejące składniki przez ID lub zagnieżdżone tworzenie składników.
 
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 

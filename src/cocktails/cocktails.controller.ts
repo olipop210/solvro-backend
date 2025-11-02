@@ -1,4 +1,4 @@
-import { Body, Controller, Delete, Get, HttpException, HttpStatus, Param, Patch, Post, Put, Query } from "@nestjs/common";
+import { Body, Controller, Delete, Get, HttpException, HttpStatus, Param, Post, Put, Query } from "@nestjs/common";
 import { Cocktail, Prisma } from "generated/prisma";
 import { CocktailsService } from "./cocktail.service";
 import { ApiBody, ApiQuery, ApiResponse } from "@nestjs/swagger";
@@ -6,6 +6,8 @@ import CreateCocktailDto from './dto/createCocktail.dto';
 import { CocktailClass } from "./entities/cocktail.entity";
 import UpdateCocktailDto from "./dto/updateCocktail.dto";
 import { sortingDictionary, SortingOptions } from "./interfaces/sortingDictionary";
+
+//kontroler koktajli, razem z opisami do Swaggera
 
 @Controller('cocktails')
 export class CocktailsController {

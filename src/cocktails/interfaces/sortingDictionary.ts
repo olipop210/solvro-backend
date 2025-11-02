@@ -1,5 +1,7 @@
 import { Prisma } from "generated/prisma";
 
+//Słownik do mapowania opcji sortowania na odpowiednie obiekty Prisma
+
 export const sortingDictionary = {
     'name_asc':  { name: 'asc' } as Prisma.CocktailOrderByWithRelationInput,
     'name_desc': { name: 'desc' } as Prisma.CocktailOrderByWithRelationInput,
@@ -10,6 +12,8 @@ export const sortingDictionary = {
     'ingredientsCount_asc': { Ingredients: { _count: 'asc' } } as Prisma.CocktailOrderByWithRelationInput,
     'ingredientsCount_desc': { Ingredients: { _count: 'desc' } } as Prisma.CocktailOrderByWithRelationInput,
 }
+
+//Enum do dokumentacji Swaggera
 
 export enum SortingOptions {
     NAME_ASC = 'name_asc',

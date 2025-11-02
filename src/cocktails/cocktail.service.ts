@@ -1,6 +1,8 @@
-import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import { PrismaService } from '../prisma.service';
 import { Cocktail, Prisma } from 'generated/prisma';
+
+// Serwis do koktajli 
 
 @Injectable()
 export class CocktailsService {

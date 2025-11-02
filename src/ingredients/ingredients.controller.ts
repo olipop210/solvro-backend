@@ -1,10 +1,12 @@
-import { Body, Controller, Get, Param, Post, Patch, Delete, Put, Query } from "@nestjs/common";
+import { Body, Controller, Get, Param, Post, Delete, Put, Query } from "@nestjs/common";
 import { IngredientsService } from "./ingredients.service";
 import { Prisma } from "generated/prisma";
 import { ApiBody, ApiQuery, ApiResponse } from "@nestjs/swagger";
 import { CreateIngredientDto } from "./dto/createIngredient.dto";
 import { sortingDictionary, SortingOptions } from "./interfaces/sortingDictionary";
 import { IngredientClass } from "./entities/ingredient.entity";
+
+//kontroler składników, razem z opisami do Swaggera
 
 @Controller('ingredients')
 export class IngredientsController {

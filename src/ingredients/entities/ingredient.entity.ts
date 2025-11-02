@@ -1,5 +1,7 @@
 import { ApiProperty } from "@nestjs/swagger";
 
+// Entity reprezentująca składnik w bazie danych
+
 export class IngredientClass {
 
     @ApiProperty({description: 'Unique identifier', example: '644a1f...' })

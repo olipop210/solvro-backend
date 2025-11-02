@@ -1,5 +1,7 @@
 import { ApiProperty } from "@nestjs/swagger";
-import { Cocktail, Prisma } from "generated/prisma";
+import { Cocktail } from "generated/prisma";
+
+// Entity reprezentująca koktajl w bazie danych
 
 export class CocktailClass implements Cocktail {
     @ApiProperty({description: 'Unique identifier', example: '644a1f...' })

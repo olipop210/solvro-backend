@@ -4,9 +4,6 @@ import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 
 export class CreateIngredientNestedDto {
 
-    @ApiPropertyOptional({ example: '644a1f...' })
-    id?: string;
-
     @ApiProperty({ example: 'Lime' })
     name: string;
 
